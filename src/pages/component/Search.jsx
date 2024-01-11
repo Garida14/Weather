@@ -2,11 +2,9 @@ import { CiLocationOn } from "react-icons/ci";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { MdSearch } from "react-icons/md";
-import { data } from "autoprefixer";
 
 const Search = ({ setWeatherdata, cityName }) => {
   const [input, setInput] = useState("");
-  const [suggest, setSuggest] = useState("");
 
   const cityNameHandler = (event) => {
     setInput(event.target.value);
@@ -41,7 +39,7 @@ const Search = ({ setWeatherdata, cityName }) => {
   };
 
   return (
-    <div className="w-1/2 flex flex-col gap-[10px] absolute left-[20px] top-[20px]">
+    <div className="w-1/2 flex flex-col gap-[10px] absolute left-[47px] top-[20px]">
       {" "}
       <div className="w-2/3 h-[30px] rounded-[15px] flex overflow-hidden">
         <MdSearch
